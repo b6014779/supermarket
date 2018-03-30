@@ -16,6 +16,10 @@ String description
 
 Boolean taskCompleted
 
+static hasMany=[shifts:Shift]
+
+static belongsTo=[Employee, Team]
+
     static constraints = {
 
 	taskName blank:false, nullable:false

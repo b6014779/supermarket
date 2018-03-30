@@ -18,6 +18,17 @@ String taxCode
 
 String contract
 
+Shift shift
+
+TeamLeader teamleader
+
+Manager manager
+
+static hasMany=[tasks:Task]
+
+static belongsTo=[Team]
+
+
     static constraints = {
 
 	fullName blank:false, nullable:false
@@ -26,7 +37,7 @@ String contract
 	
 	residence blank:false, nullable:false
 
-	hourlyRate blank:false, nullable:false, min:7.50
+	hourlyRate blank:false, nullable:false
 
 	employeeID blank:false, nullable:false
 

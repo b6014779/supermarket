@@ -14,6 +14,8 @@ String office
 
 String department
 
+static hasMany=[employees:Employee, teamleaders:TeamLeader]
+
     static constraints = {
 
 	fullName blank:false, nullable:false

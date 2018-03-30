@@ -10,6 +10,10 @@ int numberOfHours
 
 String startingTime
 
+static hasMany=[employees:Employee]
+
+static belongsTo=[Team, Task]
+
     static constraints = {
 
 	timeOfDay blank:false, nullable:false

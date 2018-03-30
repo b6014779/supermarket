@@ -16,6 +16,12 @@ String leaderEmail
 
 String password 
 
+Manager manager
+
+Team team
+
+static hasMany=[employees:Employee]
+
     static constraints = {
 	
 	fullName blank:false, nullable:false
@@ -26,9 +32,9 @@ String password
 	
 	sectionName blank:false, nullable:false
 	
-	officePhone blank:false, nullable:false maxSize:13
+	officePhone blank:false, nullable:false, maxSize:13
 
-	leaderEmail blank:false, nullable:false email:true
+	leaderEmail blank:false, nullable:false, email:true
 
 	password blank:false, nullable:false
 
