@@ -5,14 +5,29 @@ import spock.lang.Specification
 
 class TeamSpec extends Specification implements DomainUnitTest<Team> {
 
+	def NewTeam
+
     def setup() {
+
+	NewTeam = new Team(teamName:'Bakers',
+			numberOfEmployees:11,
+			sectionName:'Bakery',
+			description:'Bakery Cooking Team')
+
     }
 
     def cleanup() {
+	NewTeam = null
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void "Team name cannot be blank"() {
+	given:
+		setup()
+	when: "teamName field has blank value"
+		NewTeam?.teamName = ""
+	then: "Validation returns false"
+		NewTeam?.validate() == false
+		NewTeam?.errors?.hasFieldErrors('teamName') == true
+
     }
 }

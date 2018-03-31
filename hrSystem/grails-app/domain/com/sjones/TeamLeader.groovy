@@ -34,7 +34,7 @@ static hasMany=[employees:Employee]
 	
 	officePhone blank:false, nullable:false, maxSize:13
 
-	leaderEmail blank:false, nullable:false, email:true
+	leaderEmail blank:false, nullable:false, email:true, unique: true
 
 	password blank:false, nullable:false
 

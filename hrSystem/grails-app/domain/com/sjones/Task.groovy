@@ -16,6 +16,12 @@ String description
 
 Boolean taskCompleted
 
+String toString(){
+
+		return "$taskName, $sectionName, $department"
+		
+		}
+
 static hasMany=[shifts:Shift]
 
 static belongsTo=[Employee, Team]

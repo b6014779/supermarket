@@ -14,6 +14,7 @@ String office
 
 String department
 
+
 static hasMany=[employees:Employee, teamleaders:TeamLeader]
 
     static constraints = {
@@ -24,7 +25,7 @@ static hasMany=[employees:Employee, teamleaders:TeamLeader]
 
 	password blank:false, nullable:false
 	
-	managerEmail blank:false, nullable:false, email:true
+	managerEmail blank:false, nullable:false, email:true, unique:true
 	
 	office blank:false, nullable:false
 
