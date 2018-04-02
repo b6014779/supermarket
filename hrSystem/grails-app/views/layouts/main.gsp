@@ -18,6 +18,10 @@
 	<div class="row">
 	
 		<asset:image src="banner.png"/>
+		
+		<g:loginToggleLeader/>
+		<g:loginToggleManager/>
+		
 
 	</div>
 
