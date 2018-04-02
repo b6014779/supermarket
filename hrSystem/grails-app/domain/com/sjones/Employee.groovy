@@ -24,7 +24,12 @@ TeamLeader teamleader
 
 Manager manager
 
-static hasMany=[tasks:Task]
+String toString() {
+
+	return fullName
+}
+
+static hasMany=[tasks:Task, teams:Team]
 
 static belongsTo=[Team]
 
@@ -33,6 +38,8 @@ double dailyPay() {
 8*hourlyRate
 
 }
+
+
 
     static constraints = {
 

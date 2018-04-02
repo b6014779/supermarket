@@ -10,9 +10,13 @@ String sectionName
 
 String description
 
+String toString() {
 
+	return teamName
+}
 
 static hasMany=[shifts:Shift, employees:Employee, tasks:Task]
+
 
 
     static constraints = {

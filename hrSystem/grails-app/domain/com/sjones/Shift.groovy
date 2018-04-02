@@ -10,7 +10,12 @@ int numberOfHours
 
 String startingTime
 
-static hasMany=[employees:Employee]
+String toString() {
+
+	return "$timeOfDay, $dayOfWeek"
+}
+
+static hasMany=[employees:Employee, teams:Team, tasks:Task]
 
 static belongsTo=[Team, Task]
 

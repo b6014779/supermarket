@@ -20,6 +20,11 @@ Manager manager
 
 Team team
 
+String toString() {
+
+	return fullName
+}
+
 static hasMany=[employees:Employee]
 
     static constraints = {

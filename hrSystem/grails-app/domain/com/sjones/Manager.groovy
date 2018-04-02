@@ -14,6 +14,10 @@ String office
 
 String department
 
+String toString() {
+
+	return fullName
+}
 
 static hasMany=[employees:Employee, teamleaders:TeamLeader]
 

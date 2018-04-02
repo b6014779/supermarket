@@ -22,7 +22,7 @@ String toString(){
 		
 		}
 
-static hasMany=[shifts:Shift]
+static hasMany=[shifts:Shift, employees:Employee, teams:Team]
 
 static belongsTo=[Employee, Team]
 

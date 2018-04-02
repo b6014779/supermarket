@@ -3,8 +3,10 @@ package com.sjones
 class BootStrap {
 
     def init = { servletContext ->
+	
+	//commented out bootstrap instances
 
-	def manager1=new Manager (fullName: 'Steve Crossbar',
+	/* def manager1=new Manager (fullName: 'Steve Crossbar',
 				userName: 'scross',
 				password: 'secret1234',
 				managerEmail: 'scross@email.com',
@@ -140,7 +142,7 @@ class BootStrap {
 
 	task1.addToShifts(shift1)
 	task2.addToShifts(shift2)
-
+*/
 
     }
     def destroy = {
