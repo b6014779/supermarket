@@ -2,9 +2,10 @@ package com.sjones
 
 class Task {
 
+
 String taskName
 
-int numberOfPeople
+String numberOfPeople
 
 String sectionName
 
