@@ -13,6 +13,8 @@ class TeamLeaderController {
 	def user = TeamLeader.findByLeaderEmail(params.leaderEmail)
 
 	if (user && user.password == params.password){
+
+		session["jobtitle"] = "teamleader"
 			
 		session.user = user
 
@@ -31,6 +33,8 @@ class TeamLeaderController {
 	def logout = {
 
 		session.user = null
+
+		session.jobtitle = null
 
 		redirect(uri:'/')
 
